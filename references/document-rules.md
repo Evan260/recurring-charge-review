@@ -22,6 +22,7 @@ Use the invoice date or issue date.
 - **Not the printed or saved date.** A file copied onto the NAS in 2026 can hold a 2021 invoice. A PDF's own creation metadata is the date it was generated, which for a re-downloaded invoice is today.
 - **A statement is dated by the end of its period**, so a statement covering 1 March to 31 March is dated 31 March.
 - **Two dates and no labels:** take the earlier one. An invoice is issued before it is due.
+- **One date and no label,** printed as numbers like `01/02/2025`: decide day-first or month-first by the rule in `SKILL.md` step 2, apply the same answer to every document in the run, and say in the report which convention you used. Never pick one silently: `01/02/2025` read the wrong way moves a price rise by a month and can turn it into a same-day double charge.
 - **No usable date:** keep the record with the date marked unknown. It still counts toward the vendor's total, and it is left out of cycle detection.
 
 ## Totals
@@ -46,6 +47,8 @@ A statement line and a separate invoice for the same charge are a duplicate pair
 ## Currency
 
 Read the currency from, in order of reliability: an explicit ISO 4217 code, the currency symbol together with the country in the address, the tax name, the language.
+
+An explicit code outranks everything below it. A document reading `GST` beside a total of `EUR 23.80` is recorded as EUR, because the code is printed on the amount itself while the tax name may be a template that was never changed. Say in the report that the two disagreed.
 
 Tax names are the most reliable signal after an explicit code:
 

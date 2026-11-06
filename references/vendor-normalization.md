@@ -9,11 +9,11 @@ The procedure is in `SKILL.md`, step 3. This file is the set of cases it has to 
 | As printed on the documents | Normalised | Why they group |
 |---|---|---|
 | `Adobe Inc.`, `ADOBE SYSTEMS SOFTWARE`, `Adobe *Creative Cloud` | `adobe`, `adobe systems software`, `adobe creative cloud` | One normalised name is contained in the others |
-| `AMZN Mktp CA*2H4XY1`, `Amazon.ca`, `AMAZON MKTP CA` | `amzn mktp ca`, `amazon ca`, `amazon mktp ca` | Route token and reference stripped, remainder agrees |
-| `SQ *THE COFFEE BAR`, `The Coffee Bar Ltd` | `sq coffee bar`, `coffee bar` | `sq` is a Square payment route, not a vendor |
-| `GOOGLE*GSUITE_argoro`, `Google Workspace` | `google gsuite argoro`, `google workspace` | Same payee, same monthly cycle, amounts agree |
+| `AMZN Mktp CA*2H4XY1`, `Amazon.ca`, `AMAZON MKTP CA` | all three become `amazon` | `mktp` and `ca` are dropped as marketplace and locale words, the reference goes with every token holding a digit, and `amzn` is read as `amazon` |
+| `SQ *THE COFFEE BAR`, `The Coffee Bar Ltd` | `coffee bar`, `coffee bar` | `sq` is a Square payment route, dropped before comparing |
+| `GOOGLE*GSUITE_argoro`, `Google Workspace` | `google google argoro`, `google workspace` | `gsuite` is read as `google`; they share a leading word, and pass two merges them because the amounts and the monthly cycle agree |
 | `Hydro One`, `HYDRO ONE NETWORKS INC` | `hydro one`, `hydro one networks` | Containment after removing `inc` |
-| `PAYPAL *SPOTIFY`, `Spotify AB` | `paypal spotify`, `spotify ab` | PayPal is the route; group on what follows |
+| `PAYPAL *SPOTIFY`, `Spotify AB` | `spotify`, `spotify` | PayPal is a payment route, so the leading word is dropped and the comparison starts at the vendor |
 
 ## Names that must not group
 
@@ -34,7 +34,7 @@ A card statement line carries a store number, a terminal id, or the last four di
 
 ## Why single letters are removed
 
-Separator artefacts. `AMZN*MKTP` becomes `amzn mktp`, but `A&W` becomes `a w`, and a lone `a` or `w` matching some other vendor's stray letter would create false overlap.
+Separator artefacts. `A&W` becomes `a w`, and a lone `a` or `w` matching some other vendor's stray letter would create false overlap.
 
 ## The one case that needs a human
 
