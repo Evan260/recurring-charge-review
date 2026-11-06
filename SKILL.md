@@ -1,4 +1,28 @@
+---
+name: recurring-charge-review
+description: Reads the invoices, receipts and billing statements already stored on the NAS and reports what is billing on a repeating basis, how much each charge has risen, what has stopped arriving, the largest one-off purchases, and what to consider instead. Writes one CSV, only after asking. Never moves, renames, deletes or sends a file, and nothing leaves the NAS.
+---
+
 # Recurring Charge Review
+
+## User goal
+
+To know what a household or business is actually paying on a repeating basis, how each charge has changed over time, and what is worth doing about it, from documents that are already on the NAS and have never been read together.
+
+## Required inputs
+
+- **A folder on the NAS.** Subfolders are included. Nothing else is read.
+- **A window, optional.** A number of years, or everything. Defaults to the three years ending today.
+
+Nothing else is required: no account, no credentials, no network access.
+
+## Supported CLI capabilities used
+
+- **Files:** find and browse documents in the given folder and its subfolders.
+- **Documents:** read a document, extract information from it, and compare documents with each other.
+- **Knowledge:** save text, used once and only with consent, to write the CSV.
+
+No other capability is used. The skill does not delete, move, rename, share or send anything, and it has no reason to.
 
 ## What this skill does
 
@@ -192,6 +216,16 @@ Give each suggestion the cost of doing nothing: what the charge has cost so far,
 
 The suggestion worth making first, whenever it applies, is a cloud storage subscription on a machine whose entire purpose is storage.
 
+## Completion and failure handling
+
+**Complete** means the nine report sections have been shown, every figure traces to a document, and either the CSV was written with consent or the question was asked and recorded as unanswered.
+
+**Partial** is a normal outcome, not an error: some documents unreadable, no recurring pattern found, a group whose currency could not be determined. Report what was found, name what was not, and stop. A partial answer that says which part is missing is worth more than a complete-looking one that guessed.
+
+**Failure** is when the folder does not exist, cannot be read, or holds no candidate documents. Say which of those happened, name the folder and the file types looked for, and stop. Do not search elsewhere, do not widen the file types, and do not produce a report with nothing in it.
+
+Nothing is written to disk on any path except the consented CSV.
+
 ## When something is missing or unclear
 
 Say so and stop rather than filling the gap:
@@ -222,3 +256,4 @@ The skill never deletes, moves, renames or overwrites a file, and never sends or
 - `references/document-rules.md`: which date and which total to take from each kind of document, with the awkward cases.
 - `references/report-format.md`: the exact on-screen layout and CSV column meanings.
 - `references/alternatives.md`: the only list suggestions may come from, and the rules for making one.
+- `references/disclosures.md`: third-party components, what was built for this Hackathon, and the AI tools used.
