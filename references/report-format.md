@@ -39,12 +39,16 @@ Adobe: 4 documents appear to be missing. Every gap is a whole number of months.
 
 ### 2. Price increases worth noticing
 
-Only steps of 15 percent or more between consecutive occurrences:
+Every rise between consecutive occurrences, largest first. Rises of 15 percent or more are marked, which is emphasis and not a filter:
 
 ```
-Adobe            Jan 2025   14.99 -> 19.99   +33.4%
-Dropbox          Jan 2026  119.88 -> 143.88  +20.0%
+Adobe            Jan 2025   14.99 -> 19.99   +33.4%   *
+Dropbox          Jan 2026  119.88 -> 143.88  +20.0%   *
+Hydro One        Mar 2026   96.40 ->  99.95   +3.7%
+Fastmail         Jan 2026   59.00 ->  61.00   +3.4%
 ```
+
+Rounding, a tax rate change and a part-month first invoice all move an amount without the price moving, so anything under one percent is left out.
 
 ### 3. Stopped appearing
 

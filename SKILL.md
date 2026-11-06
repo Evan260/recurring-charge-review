@@ -141,8 +141,10 @@ For each recurring group, after duplicates are excluded:
 - Report the earliest amount and its date, and the latest amount and its date.
 - Report the change between them in both the currency amount and as a percentage.
 - Report the total of every occurrence, with credit notes subtracted.
-- Flag any single step up of 15 percent or more between consecutive occurrences, with the two dates and the two amounts, because that is the kind of increase people do not notice.
-- Where a flagged step spans a gap with missing documents, say so. The rise may have arrived in stages that are not on the NAS.
+- Report **every** rise between consecutive occurrences, largest first, with the two dates and the two amounts. A subscription creeping up six percent a year is doing exactly the thing this report exists to catch, and a high threshold would hide it.
+- Ignore a rise of less than one percent, or of one cent, whichever is larger. Below that the movement is rounding, a tax rate changing, a part-month on a first invoice, or a usage-based charge wobbling, and listing it teaches the reader to skip the section.
+- Mark the rises of 15 percent or more so the eye lands on them first. Marking is emphasis, not a filter: the smaller ones are still listed.
+- Where a rise spans a gap with missing documents, say so. It may have arrived in stages that are not on the NAS.
 
 ### Step 7: Find charges that stopped
 

@@ -66,11 +66,13 @@ Say plainly that the price has moved before, where it has. A charge that rose 13
 >
 > **Dropbox**, yearly, \$143.88 last time, \$383.64 paid so far. At today's price that is another \$431.64 over the next three years, and the price has already risen 20 percent once.
 >
-> You are paying for cloud storage on a machine whose whole purpose is storage, and that machine is already paid for. Nextcloud and Seafile run on this NAS and do the same job.
+> Consider Nextcloud or Seafile, running on this NAS. You are paying for cloud storage on a machine whose whole purpose is storage, and that machine is already paid for.
 >
 > The trade: backups become yours, and a NAS in your house is not an off-site copy.
 
-Three short paragraphs. What it has cost and will cost, what the alternative is, what the alternative costs you. Every figure measured, no price for the alternative, no pitch.
+Three short paragraphs. What it has cost and will cost, what to consider instead, what that would cost you. Every figure measured, no price for the alternative, no pitch.
+
+**Say it as a recommendation, not a list.** Begin the line with the word Consider. A row of product names leaves the reader to work out for themselves that these are options worth acting on, and most will not bother.
 
 ## The cancellation case
 
