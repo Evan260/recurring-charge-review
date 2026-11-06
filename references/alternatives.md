@@ -47,13 +47,30 @@ Match on what the vendor sells, not on its name, and only when it is unambiguous
 
 When no row clearly fits, say nothing. "Worth a look: nothing obvious" is a better line than a bad suggestion.
 
+## Put a number on it, but only a number you measured
+
+A suggestion is easier to act on with the cost of doing nothing beside it. Two figures are allowed, because both come from the documents:
+
+- **What it has cost so far.** The group's total paid, which is measured.
+- **What the next three years cost if nothing changes.** The latest amount multiplied out over its own cycle. Label it as what it is: at today's price, if the price never moves again. It is arithmetic on a figure you read, not a forecast.
+
+Say plainly that the price has moved before, where it has. A charge that rose 130 percent in three years will not hold still for the next three, and the projection is a floor rather than an estimate.
+
+**Never put a number on the alternative.** Not its price, not the saving, not a payback period. A saving is the difference between a figure you measured and a figure you made up, which makes the whole line made up.
+
+**The exception that is not an exception: hardware already bought.** When the alternative runs on the NAS the user is already sitting in front of, say so. The machine is paid for, which is a fact about their situation rather than a price you invented. That is the strongest thing the skill can say and it costs nothing to say honestly.
+
 ## What a suggestion looks like
 
 > **Worth a look**
 >
-> Dropbox, yearly, \$143.88 last time. You are paying for cloud storage on a machine built for storage. Nextcloud or Seafile run on this NAS and do the same job. The trade: backups become yours, and a NAS at home is not an off-site copy.
+> **Dropbox**, yearly, \$143.88 last time, \$383.64 paid so far. At today's price that is another \$431.64 over the next three years, and the price has already risen 20 percent once.
+>
+> You are paying for cloud storage on a machine whose whole purpose is storage, and that machine is already paid for. Nextcloud and Seafile run on this NAS and do the same job.
+>
+> The trade: backups become yours, and a NAS in your house is not an off-site copy.
 
-Three sentences. What it is, what the alternative is, what it costs you. No price for the alternative, no pitch.
+Three short paragraphs. What it has cost and will cost, what the alternative is, what the alternative costs you. Every figure measured, no price for the alternative, no pitch.
 
 ## The cancellation case
 

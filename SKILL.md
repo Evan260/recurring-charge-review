@@ -186,6 +186,8 @@ One row per document, never one row per group, so that the figures can be checke
 
 Read `references/alternatives.md` and follow it. In short: suggest only from its table, never state a price for an alternative, one suggestion per vendor, nothing at all for a vendor you cannot categorise, and keep suggestions in their own section after everything measured.
 
+Give each suggestion the cost of doing nothing: what the charge has cost so far, and what it costs over the next three years at today's price, labelled as that and not as a forecast. Both are arithmetic on figures you read. Never put a number on the alternative itself.
+
 The suggestion worth making first, whenever it applies, is a cloud storage subscription on a machine whose entire purpose is storage.
 
 ## When something is missing or unclear
